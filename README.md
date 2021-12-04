@@ -45,3 +45,29 @@
 7. model evaluation
 7. model selection
 8. hyperparameter tuning
+
+
+## __Analysis__
+
+### __Inferences from EDA:__
+
+- Only 1.8% of the population are student with the highest contacts made towards admin job role at 26%
+- 60% of the contacted population is married
+- 30% of contacted population has university degree, 24.2% are high school graduates and a very minimal amount of population is illiterate
+- 79.7% population does not have any credit default
+- 53.8% population has housing loan
+- 84.4% population does not have a personal loan 
+- 63.9% contacts were made to cell phones 
+- The month of may has the highest contact rate at 33.5% 
+- Thursdays have seen the highest contact rate at 20.9% followed very closely by mon at 20.7%
+- 86.5% of the population contact has poutcome non existant which implies they were not contacted during previous campaigns
+- The response pie chart shows that the dataset is highly imbalanced
+- Age, duration, campaign, previous and consumer confidence index has very high number of outliers that needs treatment using yeo-johnson power transform
+
+### __Correlation / Heatmap plot inferences__
+- The highest correlation is between euribor3m and emp_var_rate which is not relavent to the problem at hand
+- Followed by emp_var_rate and nr_employed which is convenient because a higher number of employees in the bank would lead to a high number of employee variation rate
+- duration has a good correlation with response which does mean there is a relation between duration of last call and the response received which can be further clarified during visualization
+- pdays has correlation with response which suggests that someone contacted within less amount of days after being contacted once during the campaign has a higher probability towards a positive response
+- nr_employed has an inverse correlation with response as well and due to its high correlation with emp_var_rate we can conclude that the lesser the emp_var_rate the higher the probability of getting a positive response
+
