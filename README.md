@@ -1,5 +1,11 @@
 # The Portugese Bank Marketing Dataset
 
+| Project particulars |                                                                   |
+|---------------------|-------------------------------------------------------------------|
+| Team ID             | PTID-CDS-NOV21-1232                                               |
+| Project ID          | PRCP-1000-ProtugeseBank                                           |
+| Team Members        | Shazzadur Rehman, Harish Hari, Yashwanth Shankaran, Gorecha Viral |
+
 "The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit (variable y). "
 
 ### __dataset definition__
@@ -71,3 +77,37 @@
 - pdays has correlation with response which suggests that someone contacted within less amount of days after being contacted once during the campaign has a higher probability towards a positive response
 - nr_employed has an inverse correlation with response as well and due to its high correlation with emp_var_rate we can conclude that the lesser the emp_var_rate the higher the probability of getting a positive response
 
+### __Inferences from Visualization:__
+
+#### __Among the people who subscribed__
+- Single ones subscibe more than married or divorced
+- Students have the highest subscription rate
+- people with one loan subscribe more than those with no loans or more than one loans
+- Subscription rate is higher for those contacted on their cellphones
+- Thursdays have seen higher subscription rate as it should be as thursdays have highest contact rates during the course of any week
+- The month of march has seen the highest subscription rate
+- Those who had subscribed to term deposit in earlier campaigns tend to subscribe during this campaigns
+- As it is evident those with no credit default has a considerably high subscription rates 
+- Those above the age of 60 i.e. elderly people has a high tendency to subscribe to term deposit
+
+### __Inference from lmplot__
+- those contacts which lasted less than 1200 seconds and had been contacted less than 6 times during this campaign has resulted into subscription to term deposit at a considerably high rate
+
+### __Inferences form Kernal density estimate plots and scatter plots__
+- Kernal density estimate plots draft the cumulative density of data points with respect to each of the two features provided and we can further infer the correlation of theirs as seen in the heatmaps
+
+
+### __Conclusion and further research__
+
+### __Conclusion__
+1. As seen from inferences the best subscription rate can be achieved during the month of march especially on thursdays
+2. Try calling more students and those who are retired that will give better subscription rates
+3. Make sure the employees do not frequently vary while contacting a customer
+4. Make sure the price and confidence index are in acceptable lower ranges during the contact periods
+5. Make sure the contact duration does not exceed 1200 seconds and the number of contacts made should be less than 6
+6. calling in more elderly people especially those above 60 will provide better subscription rate
+
+### __Further work__
+1. Usage of tensorflow or pytorch framework on model building to achieve better precision and recall on yes as the one achieved here is not acceptable
+2. Usage of L1 Regularization will provide better results
+3. Collect better more data for better models
